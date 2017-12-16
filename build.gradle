@@ -1,0 +1,41 @@
+group 'com.fanhl'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+task hello << {
+    println 'Hello world!'
+}
+
+task upper << {
+    String someString = 'mY_nAmE'
+    println "Original: " + someString
+    println "Upper case: " + someString.toUpperCase()
+}
+
+task intro(dependsOn: hello) << {
+    println "I'm Gradle"
+}
+
+task taskX(dependsOn: 'taskY') << {
+    println 'taskX'
+}
+task taskY << {
+    println 'taskY'
+}
+
+4.times { counter ->
+    task "task$counter" << {
+        println "I'm task number $counter"
+    }
+}
