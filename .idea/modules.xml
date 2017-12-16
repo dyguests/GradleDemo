@@ -3,8 +3,24 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/GradleDemo.iml" filepath="$PROJECT_DIR$/.idea/modules/GradleDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/shared/GradleDemo-shared.iml" filepath="$PROJECT_DIR$/.idea/modules/shared/GradleDemo-shared.iml" group="shared" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/shared/GradleDemo-shared_main.iml" filepath="$PROJECT_DIR$/.idea/modules/shared/GradleDemo-shared_main.iml" group="shared" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/shared/GradleDemo-shared_test.iml" filepath="$PROJECT_DIR$/.idea/modules/shared/GradleDemo-shared_test.iml" group="shared" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/GradleDemo_main.iml" filepath="$PROJECT_DIR$/.idea/modules/GradleDemo_main.iml" group="GradleDemo" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/GradleDemo_test.iml" filepath="$PROJECT_DIR$/.idea/modules/GradleDemo_test.iml" group="GradleDemo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/api.iml" filepath="$PROJECT_DIR$/.idea/modules/api.iml" group="api" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/api/api_main.iml" filepath="$PROJECT_DIR$/.idea/modules/api/api_main.iml" group="api" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/api/api_test.iml" filepath="$PROJECT_DIR$/.idea/modules/api/api_test.iml" group="api" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/services/services.iml" filepath="$PROJECT_DIR$/.idea/modules/services/services.iml" group="services" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/services/shared/services-shared.iml" filepath="$PROJECT_DIR$/.idea/modules/services/shared/services-shared.iml" group="services/shared" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/services/shared/services-shared_main.iml" filepath="$PROJECT_DIR$/.idea/modules/services/shared/services-shared_main.iml" group="services/shared" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/services/shared/services-shared_test.iml" filepath="$PROJECT_DIR$/.idea/modules/services/shared/services-shared_test.iml" group="services/shared" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/services/services_main.iml" filepath="$PROJECT_DIR$/.idea/modules/services/services_main.iml" group="services" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/services/services_test.iml" filepath="$PROJECT_DIR$/.idea/modules/services/services_test.iml" group="services" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/shared.iml" filepath="$PROJECT_DIR$/.idea/modules/shared.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/services/webservice/webservice.iml" filepath="$PROJECT_DIR$/.idea/modules/services/webservice/webservice.iml" group="services/webservice" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/services/webservice/webservice_main.iml" filepath="$PROJECT_DIR$/.idea/modules/services/webservice/webservice_main.iml" group="services/webservice" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/services/webservice/webservice_test.iml" filepath="$PROJECT_DIR$/.idea/modules/services/webservice/webservice_test.iml" group="services/webservice" />
     </modules>
   </component>
 </project>

@@ -2,8 +2,18 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
+      <module name="api_main" target="1.8" />
+      <module name="api_test" target="1.8" />
+      <module name="GradleDemo-shared_main" target="1.8" />
+      <module name="GradleDemo-shared_test" target="1.8" />
       <module name="GradleDemo_main" target="1.8" />
       <module name="GradleDemo_test" target="1.8" />
+      <module name="services-shared_main" target="1.8" />
+      <module name="services-shared_test" target="1.8" />
+      <module name="services_main" target="1.8" />
+      <module name="services_test" target="1.8" />
+      <module name="webservice_main" target="1.8" />
+      <module name="webservice_test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
