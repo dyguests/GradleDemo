@@ -1,63 +1,32 @@
-group 'com.fanhl'
-version '1.0-SNAPSHOT'
-
 apply plugin: 'java'
-
-sourceCompatibility = 1.8
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile group: 'commons-collections', name: 'commons-collections', version: '3.2'
+    testCompile group: 'junit', name: 'junit', version: '4.+'
 }
 
-//task hello << {
-//    println 'Hello world!'
-//}
+sourceCompatibility = 1.8
 
-task upper << {
-    String someString = 'mY_nAmE'
-    println "Original: " + someString
-    println "Upper case: " + someString.toUpperCase()
-}
+version = '1.0'
 
-//task intro(dependsOn: hello) << {
-//    println "I'm Gradle"
-//}
-
-task taskX(dependsOn: 'taskY') << {
-    println 'taskX'
-}
-task taskY << {
-    println 'taskY'
-}
-
-4.times { counter ->
-    task "task$counter" << {
-        println "I'm task number $counter"
+jar {
+    manifest {
+        attributes 'Implementation-Title': 'Gradle Quickstart', 'Implementation-Version': version
     }
 }
-task0.dependsOn task2, task3
 
-task hello << {
-    println 'Hello Earth'
-}
-hello.doFirst {
-    println 'Hello Venus'
-}
-hello.doLast {
-    println 'Hello Mars'
-}
-hello << {
-    println 'Hello Jupiter'
+test {
+    systemProperties 'property': 'value'
 }
 
-task myTask {
-    ext.myProperty = "myValue"
-}
-
-task printTaskProperties << {
-    println myTask.myProperty
+uploadArchives {
+    repositories {
+        flatDir {
+            dirs 'repos'
+        }
+    }
 }
