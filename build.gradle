@@ -13,9 +13,9 @@ dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
 }
 
-task hello << {
-    println 'Hello world!'
-}
+//task hello << {
+//    println 'Hello world!'
+//}
 
 task upper << {
     String someString = 'mY_nAmE'
@@ -23,9 +23,9 @@ task upper << {
     println "Upper case: " + someString.toUpperCase()
 }
 
-task intro(dependsOn: hello) << {
-    println "I'm Gradle"
-}
+//task intro(dependsOn: hello) << {
+//    println "I'm Gradle"
+//}
 
 task taskX(dependsOn: 'taskY') << {
     println 'taskX'
@@ -39,3 +39,18 @@ task taskY << {
         println "I'm task number $counter"
     }
 }
+task0.dependsOn task2, task3
+
+task hello << {
+    println 'Hello Earth'
+}
+hello.doFirst {
+    println 'Hello Venus'
+}
+hello.doLast {
+    println 'Hello Mars'
+}
+hello << {
+    println 'Hello Jupiter'
+}
+
