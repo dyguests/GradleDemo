@@ -54,3 +54,10 @@ hello << {
     println 'Hello Jupiter'
 }
 
+task myTask {
+    ext.myProperty = "myValue"
+}
+
+task printTaskProperties << {
+    println myTask.myProperty
+}
